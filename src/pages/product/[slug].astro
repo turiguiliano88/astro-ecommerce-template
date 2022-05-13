@@ -1,0 +1,28 @@
+---
+import Base from '../../layouts/base.astro';
+import App from '../../components/product';
+import { fullProducts, customer } from '../../data/products';
+
+export async function getStaticPaths() {
+    const products = fullProducts;
+    return products.items.map(item => {
+        return {
+            params: {
+                slug: item.slug
+            },
+            props: {
+                product: item
+            }
+        }
+    })
+
+}
+
+const customerName = `${customer.firstName} ${customer.lastName}`
+const totalQuantity = customer.orders.items.length;
+const {product} = Astro.props;
+---
+
+<Base title="product">
+<App client:load product={product} customerName={customerName} totalQuantity={totalQuantity} showSearchBox={true} />
+</Base>

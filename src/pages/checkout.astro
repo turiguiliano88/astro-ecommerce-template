@@ -1,0 +1,11 @@
+---
+import Base from "../layouts/base.astro";
+import App from '../components/checkout';
+import { customer, eligiblePaymentMethods, eligibleShippingMethods} from '../data/products';
+
+const order = { ...customer.orders.items[0], state: 'AddingItems', shippingMethod: ''}
+---
+
+<Base>
+<App client:load order={order} customer={customer} eligiblePaymentMethods={eligiblePaymentMethods} eligibleShippingMethods={eligibleShippingMethods} />
+</Base>

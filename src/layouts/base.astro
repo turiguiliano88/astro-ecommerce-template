@@ -1,0 +1,20 @@
+---
+import '../styles/global.css';
+import Footer from '../components/Footer'
+
+const {title} = Astro.props;
+---
+
+<html lang="end">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>{title}</title>
+</head>
+<body class="flex justify-center">
+    <div class="w-full" id="root">
+    <slot />
+    <Footer />
+    </div>
+</body>
+</html>

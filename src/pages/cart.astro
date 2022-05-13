@@ -1,0 +1,12 @@
+---
+import Base from "../layouts/base.astro";
+import App from '../components/cart'
+import { customer } from '../data/products';
+
+const customerName = `${customer.firstName} ${customer.lastName}`
+const order = customer.orders.items[0]
+---
+
+<Base>
+<App client:load order={order} customerName={customerName} showSearchBox={true} />
+</Base>

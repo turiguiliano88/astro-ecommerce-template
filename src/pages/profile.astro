@@ -1,0 +1,12 @@
+---
+import Base from "../layouts/base.astro";
+import App from '../components/profile';
+import { customer } from '../data/products';
+
+
+const totalQuantity = customer.orders.items.length;
+---
+
+<Base>
+<App client:load customer={customer} totalQuantity={totalQuantity} />
+</Base>
