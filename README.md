@@ -97,4 +97,4 @@ These are responsible for layout / non-state Astro component rendered at server.
 
 I am Minh from Berlin. Coding and desiging are my jobs. Sometimes they make me happy :)
 
-Hope you find this project useful!
+I hope you find this project useful!
