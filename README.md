@@ -1,14 +1,15 @@
-# Astro Vendure storefront
-
-[Demo](https://astrossr.minh.berlin)
+# Astro Ecommerce Template
+[Demo](https://astro.minh.berlin)
 
 ## Description
 
-This project attempts to deliever smooth e-commerce storefront experiences to customer/end user. It is powered by Vendure - headless commerce framework as backend and leveraging SSR functionalities and partial hydration on client side that Astro gives us.
+This is the simplified version of this [Astro Vendure storefront project](https://github.com/turiguiliano88/astro-vendure-storefront).
+Data is hardcoded and only meant for showcase purpose.
+You can use this template as a starting point to build your storefront.
 
 ## Features
 
-support common ecommerce flow such as ordering and managing profile.
+This project supports common ecommerce flow such as ordering and managing profile.
 
 - Order flow:
   1. Add item to cart
@@ -62,6 +63,9 @@ It also follows design-guide carefully in order to create modern looking UI. By 
 ```
 
 ### Astro components
+
+These are responsible for layout / non-state Astro component rendered at server.
+
 ```
 ├── src/
 │   ├── pages/
@@ -77,15 +81,20 @@ It also follows design-guide carefully in order to create modern looking UI. By 
 │   ├── layouts/
 │   │   └── base.astro
 ```
+## Future improvements
 
-## SSR functionalites
-
-Every request from browser will be examined on server to see if the customer is logged in or there is any active order by checking the cookie from the request header. The server will therefore redirect to proper route.
-This ensure that only proper customer/guest can see his/her private orders/info. It also makes Navbar always up-to-date.
+1. Animation
+2. Addresses management
+3. ...
 
 ## Powered by
 - [Astro](https://astro.build)
-- [Vendure](https://www.vendure.io)
 - [React](https://reactjs.org)
 - [TailwindCSS](https://tailwindcss.com)
 - ...
+
+## About me
+
+I am Minh from Berlin. Coding and desiging are my jobs. Sometimes they make me happy :)
+
+Hope you find this project useful!
