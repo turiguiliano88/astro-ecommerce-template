@@ -85,7 +85,8 @@ These are responsible for layout / non-state Astro component rendered at server.
 
 1. Animation
 2. Addresses management
-3. ...
+3. Writing test
+4. ...
 
 ## Powered by
 - [Astro](https://astro.build)
