@@ -96,6 +96,6 @@ These are responsible for layout / non-state Astro component rendered at server.
 
 ## About me
 
-I am Minh from Berlin. Coding and desiging are my jobs. Sometimes they make me happy 😁
+I am Minh from Berlin. Coding and desiging are my jobs 😁.
 
 I hope you find this project useful!
