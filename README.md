@@ -3,8 +3,6 @@
 
 ## Description
 
-**[apply for Astro 1.0 hackathon Best Theme]**
-
 This is the simplified version of this [Astro Vendure storefront project](https://github.com/turiguiliano88/astro-vendure-storefront).
 Data is hardcoded and only meant for showcase purpose.
 You can use this template as a starting point to build your storefront.
@@ -86,10 +84,9 @@ These are responsible for layout / non-state Astro component rendered at server.
 
 ## Future improvements
 
-1. Animation
-2. Addresses management
-3. Writing test
-4. ...
+1. Addresses management
+2. Writing test
+3. ...
 
 ## Powered by
 - [Astro](https://astro.build)
